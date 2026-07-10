@@ -20,14 +20,14 @@ export default function SubmitButton ({ title, disabled = false, onPress} : Subm
 
 const styles = StyleSheet.create({
     button: {
-        backgroundColor: '#4a90e2',
+        backgroundColor: '#1357b2',
         padding: 14,
         borderRadius: 8,
         alignItems: 'center',
         marginTop: 10,
     },
     disabled: {
-        backgroundColor: '#9BBCE0',
+        backgroundColor: '#cbdce4',
     },
     text: {
         color: 'white',
