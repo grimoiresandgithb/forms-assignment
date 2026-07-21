@@ -5,9 +5,10 @@ import { Ionicons } from "@expo/vector-icons";
 export interface FormInputProps extends TextInputProps {
     label: string;
     error?: string | false;
+    icon?: string;
 }
 
-export default function FormInput({ label, error, secureTextEntry, ...props} : FormInputProps) {
+export default function FormInput({ label, error, secureTextEntry, icon, ...props} : FormInputProps) {
     const [focused, setFocused] = useState(false);
     const [showPassword, setShowPassword] = useState(false);
     const isPassword = secureTextEntry === true;

@@ -31,6 +31,8 @@ export default function EmployeeFormScreen() {
           }}
           validationSchema={EmployeeSchema}
           onSubmit={(values) => console.log(values)}
+          validateOnBlur={true}
+          validateOnChange={true}
         >
           {({
             handleChange, handleSubmit, handleBlur, values, errors, touched, isValid

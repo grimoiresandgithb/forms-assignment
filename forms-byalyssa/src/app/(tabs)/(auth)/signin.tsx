@@ -19,6 +19,8 @@ export default function SignInScreen() {
                     initialValues={{ email: '', password: '' }}
                     validationSchema={SignInSchema}
                     onSubmit={(values) => console.log('Sign in submitted: ', values)}
+                    validateOnBlur={true}
+                    validateOnChange={true}
                 >
                     {({ handleChange, handleSubmit, handleBlur, values, errors, touched, isValid, }) => (
                         <View>

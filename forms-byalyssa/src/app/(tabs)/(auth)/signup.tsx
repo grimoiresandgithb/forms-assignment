@@ -28,6 +28,8 @@ export default function SignUpScreen() {
           }}
           validationSchema={SignUpSchema}
           onSubmit={(values) => console.log(values)}
+          validateOnChange={true}
+          validateOnBlur={true}
         >
           {({
             handleChange,
